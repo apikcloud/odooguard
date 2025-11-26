@@ -44,6 +44,16 @@ services:
       - backups:/backups
 ```
 
+To test, you can run the backup script manually inside the container:
+
+```bash
+# From the host machine:
+docker compose exec odooguard bash
+
+# Then inside the container shell:
+python3 backup.py
+```
+
 ## Known Issues
 
 - Locale and timezone variables may not be applied  
