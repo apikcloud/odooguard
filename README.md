@@ -28,8 +28,7 @@ Use secrets through a proper secret manager in real environments (Docker secrets
 ```yaml
 services:
   odooguard:
-    build:
-      context: ./backup
+    image: ghcr.io/apikcloud/odooguard:latest
     environment:
       DB_NAME: test
       PGHOST: postgres
