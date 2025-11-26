@@ -45,12 +45,10 @@ services:
       - backups:/backups
 ```
 
-Backups appear in the `backups` volume and follow the structure:
+## Known Issues
 
-```
-dump.sql
-filestore/<db_name>/
-```
+- Locale and timezone variables may not be applied  
+- Retention policy is not fully accurate  
 
 ## License
 
